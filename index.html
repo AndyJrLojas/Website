@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My iOS Apps</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 40px; /* Initial padding for the first item */
+            box-sizing: border-box;
+        }
+        .main-title {
+            color: #1a1a1a;
+            margin-bottom: 30px; /* Space below the main title */
+            font-size: 3em;
+            text-align: center;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 90%;
+            text-align: center;
+            margin-bottom: 40px; /* Space between app containers */
+        }
+        /* App titles inside containers */
+        .container h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .container p {
+            font-size: 1.1em;
+            margin-bottom: 1.5em;
+            color: #555;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover, a:focus {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        .app-store-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .app-store-button:hover, .app-store-button:focus {
+            background-color: #0056b3;
+            color: #ffffff;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #777;
+            width: 100%;
+            margin-top: auto; /* Pushes footer to bottom */
+            background-color: #e9ecef; /* Slightly different background for footer for distinction */
+        }
+        .footer p {
+            margin-bottom: 0.5em;
+            font-size: 0.95em;
+        }
+        .footer a {
+            color: #555;
+        }
+        .footer a:hover, .footer a:focus {
+            color: #3498db;
+        }
+        .footer ul { /* Styling for the list of privacy policies */
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1em;
+        }
+        .footer ul li {
+            margin-bottom: 0.3em;
+        }
+
+        /* Small screen adjustments */
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 2.2em;
+                margin-bottom: 20px;
+            }
+            .container {
+                padding: 20px;
+                width: 95%;
+            }
+            .container h1 { /* App titles in containers */
+                font-size: 2em;
+            }
+            .container p {
+                font-size: 1em;
+            }
+            .app-store-button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title">My iOS Apps</h1>
+
+    <!-- App 1: Delta Calendar -->
+    <div class="container">
+        <h1>Delta Calendar</h1>
+        <p>
+            Delta Calendar empowers you to track a wide range of daily activities—from one-time 
+            events like meals to recurring habits, your daily intake (like supplements or caffeine), and environmental 
+            factors like location and weather—to uncover their impact on your health and performance.
+        </p>
+        <p>
+            <a href="https://apps.apple.com/ca/app/delta-calendar/id6744043360" class="app-store-button">Get Delta Calendar on the App Store!</a>
+        </p>
+    </div>
+
+    <!-- App 2: MathMind -->
+    <div class="container">
+        <h1>MathMind: Test Your Skills</h1>
+        <p>
+            Welcome to MathMind: Test Your Skills! Sharpen your mathematical abilities with our fun and engaging challenges.
+            Perfect for all ages looking to improve their mental math.
+        </p>
+        <p>
+            <a href="https://apps.apple.com/ca/app/mathmind-test-your-skills/id6746140680" class="app-store-button">Get MathMind on the App Store!</a>
+        </p>
+    </div>
+
+    <!-- App 3: MasterChem -->
+    <div class="container">
+        <h1>MasterChem: Test Your Skills</h1>
+        <p>
+            Welcome to MasterChem: Test Your Knowledge! Sharpen your chemistry skills with our fun and engaging challenges.
+            Perfect for all ages looking to learn about chemistry.
+        </p>
+        <p>
+            <a href="https://apps.apple.com/ca/app/masterchem/id6746169230" class="app-store-button">Get MasterChem on the App Store!</a>
+        </p>
+    </div>
+
+    <footer class="footer">
+        <p>Privacy Policies:</p>
+        <ul>
+            <li><a href="#[YOUR_DELTA_CALENDAR_PRIVACY_POLICY_LINK_HERE]">Delta Calendar Privacy Policy</a> (Please update this link)</li>
+            <li><a href="https://sites.google.com/view/mathmindprivatepolicy/home">MathMind Privacy Policy</a></li>
+            <li><a href="https://sites.google.com/view/masterchemprivacypolicy/home">MasterChem Privacy Policy</a></li>
+        </ul>
+        <p>For support for any of our apps, please contact: <a href="mailto:deltacalendarsupport@gmail.com">deltacalendarsupport@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
